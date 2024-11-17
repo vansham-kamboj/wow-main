@@ -1,0 +1,198 @@
+.App {
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.dots-pattern{
+  background-color: #ffffff;
+  opacity: 1;
+  background-image:  radial-gradient(#f5a8ff 0.9500000000000001px, transparent 0.9500000000000001px), radial-gradient(#f5c6ff 0.9500000000000001px, #ffffff 0.9500000000000001px);
+  background-size: 38px 38px;
+  background-position: 0 0,19px 19px;
+}
+
+
+
+
+.linesbg{
+  background-color: #fbf4ff;
+  opacity: 0.8;
+  background-image:  linear-gradient(#ecadff 1px, transparent 1px), linear-gradient(to right, #ecadff 1px, #fbf4ff 1px);
+  background-size: 20px 20px;
+}
+
+.isometric{
+  background-color: #fff6ff;
+  opacity: 0.8;
+  background-image:  linear-gradient(30deg, #fdf0ff 12%, transparent 12.5%, transparent 87%, #fdf0ff 87.5%, #fdf0ff), linear-gradient(150deg, #fdf0ff 12%, transparent 12.5%, transparent 87%, #fdf0ff 87.5%, #fdf0ff), linear-gradient(30deg, #fdf0ff 12%, transparent 12.5%, transparent 87%, #fdf0ff 87.5%, #fdf0ff), linear-gradient(150deg, #fdf0ff 12%, transparent 12.5%, transparent 87%, #fdf0ff 87.5%, #fdf0ff), linear-gradient(60deg, #fdf0ff77 25%, transparent 25.5%, transparent 75%, #fdf0ff77 75%, #fdf0ff77), linear-gradient(60deg, #fdf0ff77 25%, transparent 25.5%, transparent 75%, #fdf0ff77 75%, #fdf0ff77);
+  background-size: 20px 35px;
+  background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+}
+
+.circlePt{
+  background-color: #ffffff;
+opacity: 0.8;
+background-image: radial-gradient(circle at center center, #f782ff, #ffffff), repeating-radial-gradient(circle at center center, #f782ff, #f782ff, 10px, transparent 20px, transparent 10px);
+background-blend-mode: multiply;
+}
+
+.boxes{
+  background-color: #fcf8ff;
+opacity: 0.8;
+background-image:  linear-gradient(#f2f2f2 1px, transparent 1px), linear-gradient(to right, #f3f3f3 1px, #fcf9ff 1px);
+background-size: 100px 100px;
+}
+
+.box{
+
+  background-color: #282c34;
+  height: 100px;
+  width:100px;
+}
+
+.scrollBg {
+  -webkit-animation-name: scrollSmall;
+  animation-name: scrollSmall;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes scrollSmall {
+  0% {
+    transform: translateX(0%) translateZ(0px) translateY(0px);
+  }
+
+  to {
+    transform: translateX(100%) translateZ(0px) translateY(0px);
+  }
+}
+
+@keyframes scrollSmall {
+  0% {
+    transform: translateX(0%) translateZ(0px) translateY(0px);
+  }
+
+  to {
+    transform: translateX(-100%) translateZ(0px) translateY(0px);
+  }
+}
+
+
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  gap: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for a cleaner look */
+}
+
+.card {
+  min-width: 300px;
+  background-color: #4B0082; /* Purple background */
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto; /* Prevent the cards from shrinking */
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.card-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.card-text {
+  margin-left: 16px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: #d3d3d3;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}

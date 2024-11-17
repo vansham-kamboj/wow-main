@@ -1,0 +1,54 @@
+.free-counselling-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    font-size: 2em;
+    color: #0073e6;
+    text-align: center;
+}
+
+.why-choose-us h2, .what-to-expect h2, .contact-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.cta-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    color: white;
+    background-color: #0073e6;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1em;
+}

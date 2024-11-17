@@ -1,0 +1,66 @@
+.bg-top{
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+.services-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #6B21A8;
+    font-weight: 600;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h2 {
+    font-size: 1.5em;
+    color: #6B21A8;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.service-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #6B21A8;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.service-link:hover {
+    background-color: #883fc4;
+    color: #2727272f;
+}
